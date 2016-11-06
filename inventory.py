@@ -34,6 +34,6 @@ for file in file_list:
 
 out_file = open("FullInventory.txt", "w")
 
-out_file.write("Character, Item, Location, Count, Full Update " + time.strftime("%d/%m/%Y") + ",NFP Bank = Poapieces; casterspells; moreagunk; priestspells,EC Tunnel = agpotgem; platbank; agxtralewt\n")
+out_file.write("Character, Item, Location, Count, Full Update " + time.strftime("%m/%d/%Y") + ",NFP Bank = Poapieces; casterspells; moreagunk; priestspells,EC Tunnel = agpotgem; platbank; agxtralewt\n")
 for k,v in sorted(inv_dict.items()):
     out_file.write(str(v[0]) + "," + str(v[2]) + "," + str(v[3]) + "," + str(v[4]) + "\n")
